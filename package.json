@@ -1,0 +1,22 @@
+{
+  "name": "@darcusfenix/bootstrap-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass index.scss build/index.css",
+    "prestart": "mkdirp build && npm run build",
+    "start": "chokidar '_custom.scss' -c 'npm run build'"
+  },
+  "author": "Juan Crisóstomo",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.0.0"
+  },
+  "devDependencies": {
+    "chokidar-cli": "^1.2.0",
+    "mkdirp": "^0.5.1",
+    "npm-run-all": "^4.1.2"
+  }
+}
